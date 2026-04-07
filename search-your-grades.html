@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!-- page-contact-us01:32-->
+
+<head>
+    <title>Material Grades Directory | ASTM, API, Duplex & Alloy Steel Grades - Metal Tubular Products</title>
+    <meta name="author" content="Nile-Theme">
+    <meta name="robots" content="index follow">
+    <meta name="googlebot" content="index follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="keywords"
+        content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, modern, shipment, transport, transportation, truck, trucking">
+    <meta name="description" content="Transportation and Logistics Responsive HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,500,600,700,400i,500%7CDancing+Script:700%7CDancing+Script:700%7CGreat+Vibes:400%7CPoppins:400%7CDosis:800%7CRaleway:400,700,800&amp;subset=latin-ext"
+        rel="stylesheet">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- owl Carousel assets -->
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- hover anmation -->
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <!-- flag icon -->
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- elegant icon -->
+    <link rel="stylesheet" href="assets/css/elegant_icon.css">
+
+    <!-- jquery library  -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        /* ===========================
+ULTIMATE DIRECTORY V2
+=========================== */
+
+        .ultimate-grade-system {
+
+            padding: 100px 0;
+            background: #f6f7f9;
+            position: relative;
+
+        }
+
+
+        /* blueprint grid */
+
+        .ultimate-grade-system::before {
+
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            background-image:
+                linear-gradient(#e8e8e8 1px, transparent 1px),
+                linear-gradient(90deg, #e8e8e8 1px, transparent 1px);
+
+            background-size: 70px 70px;
+
+            opacity: .5;
+
+        }
+
+
+        /* sidebar */
+        /* ================= MODERN GRADE SIDEBAR ================= */
+
+        .grade-sidebar {
+
+            background: #ffffff;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+            border: 1px solid #eee;
+
+            position: sticky;
+            top: 120px;
+
+        }
+
+        /* Title */
+
+        .grade-sidebar h4 {
+
+            font-weight: 700;
+            margin-bottom: 20px;
+
+            color: #111;
+
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 10px;
+
+        }
+
+        /* List */
+
+        .grade-sidebar ul {
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        /* Menu Item */
+
+        .grade-sidebar li {
+
+            padding: 14px 18px;
+
+            margin-bottom: 10px;
+
+            border-radius: 40px;
+
+            cursor: pointer;
+
+            background: #f6f7f9;
+
+            transition: .3s;
+
+            font-weight: 500;
+
+            color: #333;
+
+        }
+
+        /* Hover */
+
+        .grade-sidebar li:hover {
+
+            background: #e53935;
+            color: #fff;
+
+            transform: translateX(5px);
+
+            box-shadow: 0 6px 15px rgba(229, 57, 53, .25);
+
+        }
+
+        /* Active Click Effect */
+
+        .grade-sidebar li.active {
+
+            background: #111;
+            color: #fff;
+
+        }
+
+        /* right */
+
+        .grade-directory-area {
+
+            background: #fff;
+            padding: 40px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .05);
+
+        }
+
+
+        .directory-top {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+
+        }
+
+
+        .directory-top h2 {
+
+            font-weight: 700;
+
+        }
+
+
+        #gradeSearch {
+
+            padding: 14px;
+            border: 1px solid #ddd;
+            width: 320px;
+
+        }
+
+
+        /* grid */
+
+        .grade-directory-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fill, minmax(220px, 1fr));
+
+            gap: 15px;
+
+        }
+
+
+        /* item */
+
+        .grade-item {
+
+            padding: 14px 18px;
+
+            border: 1px solid #eee;
+
+            text-decoration: none;
+            color: #111;
+
+            font-weight: 500;
+
+            transition: .35s;
+
+            background: #fafafa;
+
+        }
+
+
+        .grade-item:hover {
+
+            background: #111;
+            color: #fff;
+
+            transform: translateX(6px);
+
+        }
+
+        /* ================= SEARCH FULL WIDTH ================= */
+
+        .directory-top {
+            width: 100%;
+        }
+
+        .grade-search-box {
+            width: 100%;
+        }
+
+        /* Search Input */
+
+        #gradeSearch {
+
+            width: 100%;
+            padding: 16px 22px;
+
+            border-radius: 50px;
+            /* Rounded Corners */
+            border: 1px solid #ddd;
+
+            font-size: 15px;
+
+            outline: none;
+
+            transition: .3s;
+
+            background: #f9f9f9;
+        }
+
+        /* Focus Effect */
+
+        #gradeSearch:focus {
+
+            border-color: #e53935;
+            background: #fff;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+        }
+
+
+
+
+
+
+
+
+
+        /* ================= INDUSTRIAL CTA ================= */
+
+        .grade-cta-section {
+
+            background: #e53935;
+            color: #fff;
+            position: relative;
+            padding: 80px 0 120px;
+            overflow: hidden;
+
+        }
+
+        .grade-cta-box {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .cta-text h2 {
+
+            font-weight: 700;
+            margin-bottom: 10px;
+
+        }
+
+        .cta-text p {
+
+            opacity: .9;
+            margin: 0;
+
+        }
+
+        .cta-btn {
+
+            background: #111;
+            color: #fff;
+            padding: 16px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: .3s;
+            font-weight: 600;
+
+        }
+
+        .cta-btn:hover {
+
+            background: #fff;
+            color: #111;
+
+        }
+
+        /* SVG */
+
+        .industrial-wave {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+
+        }
+
+
+
+
+
+
+        /* ================= PAGE HEADER ================= */
+
+        .grade-page-header {
+
+            background: #111;
+            color: #fff;
+
+            padding: 90px 0 80px;
+
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        /* industrial grid overlay */
+
+        .grade-page-header::before {
+
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            background-image:
+                linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+
+            background-size: 60px 60px;
+
+            top: 0;
+            left: 0;
+
+        }
+
+        .grade-header-content {
+
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+
+        }
+
+        .grade-header-content h1 {
+
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+
+        }
+
+        .grade-header-content p {
+
+            font-size: 17px;
+            opacity: .85;
+            line-height: 1.7;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--  Header  -->
+    <div id="header"></div>
+    <!-- // Header  -->
+
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="grade-page-header">
+
+        <div class="container">
+
+            <div class="grade-header-content">
+
+                <h1>Material Grades Directory</h1>
+
+                <p>
+                    Search ASTM, API, Carbon Steel, Stainless Steel, Duplex and Nickel Alloy
+                    Pipe Grades supplied by Metal Tubular Products with global standards compliance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="ultimate-grade-system">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <!-- ================= LEFT FILTER ================= -->
+
+                <div class="col-lg-3">
+
+                    <div class="grade-sidebar">
+
+                        <h4>Filter Grades</h4>
+
+                        <ul>
+
+                            <li data-filter="all" class="active">All Grades</li>
+                            <li data-filter="api">API Pipes</li>
+                            <li data-filter="carbon">Carbon Steel</li>
+                            <li data-filter="stainless">Stainless Steel</li>
+                            <li data-filter="duplex">Duplex</li>
+                            <li data-filter="european">European (EN)</li>
+                            <li data-filter="nickel">Nickel Alloy</li>
+                            <li data-filter="fittings">Fittings</li>
+                            <li data-filter="flanges">Flanges</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= RIGHT DIRECTORY ================= -->
+
+                <div class="col-lg-9">
+
+                    <div class="grade-directory-area">
+
+                        <div class="directory-top">
+
+                            <div class="grade-search-box">
+                                <input type="text" id="gradeSearch" placeholder="Search ASTM / API / Duplex Grade">
+                            </div>
+
+                        </div>
+
+
+                        <div class="grade-directory-grid" id="gradeContainer">
+                            <!-- API PIPES -->
+                            <a class="grade-item api" href="grades/API-5L-X42-Pipes-Stockiest-and-supplier.html">API 5L X42</a>
+                            <a class="grade-item api" href="grades/API-5L-X46-Pipes-Stockiest-and-supplier.html">API 5L X46</a>
+                            <a class="grade-item api" href="grades/API-5L-X52-Pipes-Stockiest-and-supplier.html">API 5L X52</a>
+                            <a class="grade-item api" href="grades/API-5L-X60-Pipes-Stockiest-and-supplier.html">API 5L X60</a>
+                            <a class="grade-item api" href="grades/API-5L-X70-Pipes-Stockiest-and-supplier.html">API 5L X70</a>
+
+                            <!-- CARBON STEEL PIPES -->
+                            <a class="grade-item carbon" href="grades/ASTM-A53-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A53</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A106-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A106</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A179-Carbon-Steel-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A179</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A192-Carbon-Steel-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A192</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T11-Tubes-Stockiest-and-supplier.html">ASTM A213 T11</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T12-Tubes-Stockiest-and-supplier.html">ASTM A213 T12</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T22-Tubes-Stockiest-and-supplier.html">ASTM A213 T22</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T5-Tubes-Stockiest-and-supplier.html">ASTM A213 T5</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T91-Tubes-Stockiest-and-supplier.html">ASTM A213 T91</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T92-Tubes-Stockiest-and-supplier.html">ASTM A213 T92</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A213-T9-Tubes-Stockiest-and-supplier.html">ASTM A213 T9</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A333-Low-Temperature-Pipes-Stockiest-and-supplier.html">ASTM A333</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A334-Heat-Exchanger-Tubes-Stockiest-and-supplier.html">ASTM A334</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P11-Pipes-Stockiest-and-supplier.html">ASTM A335 P11</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P12-Pipes-Stockiest-and-supplier.html">ASTM A335 P12</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P22-Pipes-Stockiest-and-supplier.html">ASTM A335 P22</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P5-Pipes-Stockiest-and-supplier.html">ASTM A335 P5</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P91-Pipes-Stockiest-and-supplier.html">ASTM A335 P91</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P92-Pipes-Stockiest-and-supplier.html">ASTM A335 P92</a>
+                            <a class="grade-item carbon" href="grades/ASTM-A335-P9-Pipes-Stockiest-and-supplier.html">ASTM A335 P9</a>
+
+                            <!-- STAINLESS STEEL -->
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-304-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP304</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-304H-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP304H</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-304L-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP304L</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-310-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP310</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-316-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP316</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-316L-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP316L</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-317-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP317</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-317L-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP317L</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-321-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP321</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-347-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP347</a>
+                            <a class="grade-item stainless" href="grades/ASTM-A312-TP-904L-Pipes-Tubes-Stockiest-and-supplier.html">ASTM A312 TP904L</a>
+
+                            <!-- DUPLEX -->
+                            <a class="grade-item duplex" href="grades/Duplex-Steel-S31803-Pipes-Stockiest-and-supplier.html">Duplex S31803</a>
+                            <a class="grade-item duplex" href="grades/Duplex-Steel-S32205-Pipes-Stockiest-and-supplier.html">Duplex S32205</a>
+                            <a class="grade-item duplex" href="grades/Super-Duplex-S32550-Pipes-Stockiest-and-supplier.html">Super Duplex S32550</a>
+                            <a class="grade-item duplex" href="grades/Super-Duplex-S32750-Pipes-Stockiest-and-supplier.html">Super Duplex S32750</a>
+                            <a class="grade-item duplex" href="grades/Super-Duplex-S32760-Pipes-Stockiest-and-supplier.html">Super Duplex S32760</a>
+
+                            <!-- EUROPEAN GRADES -->
+                            <a class="grade-item european" href="grades/EN-10216-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 10216</a>
+                            <a class="grade-item european" href="grades/EN-10297-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 10297</a>
+                            <a class="grade-item european" href="grades/EN-57-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 57</a>
+                            <a class="grade-item european" href="grades/EN-58A-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58A</a>
+                            <a class="grade-item european" href="grades/EN-58C-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58C</a>
+                            <a class="grade-item european" href="grades/EN-58E-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58E</a>
+                            <a class="grade-item european" href="grades/EN-58G-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58G</a>
+                            <a class="grade-item european" href="grades/EN-58H-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58H</a>
+                            <a class="grade-item european" href="grades/EN-58j-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58j</a>
+                            <a class="grade-item european" href="grades/EN-58M-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 58M</a>
+                            <a class="grade-item european" href="grades/EN-60-Grade-Steel-Pipes-Stockiest-and-supplier.html">EN 60</a>
+
+                            <!-- NICKEL ALLOYS -->
+                            <a class="grade-item nickel" href="grades/Nickel-200-Pipes-Stockiest-and-supplier.html">Nickel 200</a>
+                            <a class="grade-item nickel" href="grades/Nickel-201-Pipes-Stockiest-and-supplier.html">Nickel 201</a>
+                            <a class="grade-item nickel" href="grades/Monel-400-Pipes-Stockiest-and-Supplier.html">Monel 400</a>
+                            <a class="grade-item nickel" href="grades/Monel-K500-Pipes-Stockiest-and-Supplier.html">Monel K500</a>
+                            <a class="grade-item nickel" href="grades/Incoloy-600-Pipes-Stockiest-and-Supplier.html">Incoloy 600</a>
+                            <a class="grade-item nickel" href="grades/Incoloy-825-Pipes-Stockiest-and-Supplier.html">Incoloy 825</a>
+                            <a class="grade-item nickel" href="grades/Hastelloy-C22-Pipes-Stockiest-and-Supplier.html">Hastelloy C22</a>
+                            <a class="grade-item nickel" href="grades/Hastelloy-C276-Pipes-Stockiest-and-Supplier.html">Hastelloy C276</a>
+
+                            <!-- FITTINGS -->
+                            <a class="grade-item fittings" href="grades/ASTM-A105%20Screwed%20&%20Forged%20fittings-Stockiest-and-supplier.html">ASTM A105 Fittings</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WPB-Butt-Weld-Pipe-Fittings-Stockiest-and-supplier.html">ASTM A234 WPB</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WP1%20Butt-Weld%20Pipe%20Fittings-Stockiest-and-supplier.html">ASTM A234 WP1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WP5%20Butt-Weld%20Pipe%20Fittings-Stockiest-and-supplier.html">ASTM A234 WP5</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WP9%20Butt-Weld%20Pipe%20Fittings-Stockiest-and-supplier.html">ASTM A234 WP9</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WP11%20Butt-Weld%20Pipe%20Fittings-Stockiest-and-supplier.html">ASTM A234 WP11</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WP22%20Butt-Weld%20Pipe%20Fittings-Stockiest-and-supplier.html">ASTM A234 WP22</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A234-WP91%20Butt-Weld%20Pipe%20Fittings-Stockiest-and-supplier.html">ASTM A234 WP91</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A420-WPL3-Butt-Weld-Pipe-Fittings-Stockiest-and-supplier.html">ASTM A420 WPL3</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A420-WPL6-Butt-Weld-Pipe-Fittings-Stockiest-and-supplier.html">ASTM A420 WPL6</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A350-LF2-1%20Screwed%20&%20Forged%20Fitting-Stockiest-and-supplier.html">ASTM A350 LF2-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A350-LF3-1%20screwed%20&%20forged%20Fitting-Stockiest-and-supplier.html">ASTM A350 LF3-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A182-F1-1%20Screwed%20&%20Forged%20Fittings-Stockiest-and-supplier.html">ASTM A182 F1-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A182-F5-1%20Screwed%20&%20Forged%20Fittings-Stockiest-and-supplier.html">ASTM A182 F5-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A182-F9-1%20Screwed%20&%20Forged%20Fittings-Stockiest-and-supplier.html">ASTM A182 F9-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A182-F11-1%20Screwed%20&%20Forged%20Fittings-Stockiest-and-supplier.html">ASTM A182 F11-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A182-F22-1%20Screwed%20&%20Forged%20Fittings-Stockiest-and-supplier.html">ASTM A182 F22-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A182-F91-1%20Screwed%20&%20Forged%20Fittings-Stockiest-and-supplier.html">ASTM A182 F91-1</a>
+                            <a class="grade-item fittings" href="grades/ASTM-A694-F42-F46-F52-F56-F60-F65-F70-Forged%20Fitting-Stockiest-and-supplier.html">ASTM A694 F42-70</a>
+                            <a class="grade-item fittings" href="grades/MSS-SP-75-WPHY-42,46,52,56,60,65,70%20Butt-weld%20pipes%20fitting-Stockiest-and-supplier.html">MSS SP-75 WPHY</a>
+
+                            <!-- FLANGES -->
+                            <a class="grade-item flanges" href="grades/ASTM-A105%20Screwed%20&%20Forged%20fittings-Stockiest-and-supplier.html">ASTM A105 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A350-LF2%20Carbon%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A350 LF2 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A350-LF3%20Carbon%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A350 LF3 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A694-F42,F46,F52,F56,F60,F65,F70%20Carbon%20steel%20Flanges-Stockiest-and-supplier.html">ASTM A694 F42-70 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A182-F1%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A182 F1 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A182-F5%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A182 F5 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A182-F9%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A182 F9 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A182-F11%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A182 F11 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A182-F22%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A182 F22 Flanges</a>
+                            <a class="grade-item flanges" href="grades/ASTM-A182-F91%20Steel%20Flanges-Stockiest-and-supplier.html">ASTM A182 F91 Flanges</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        /* SEARCH */
+
+        document
+            .getElementById("gradeSearch")
+            .addEventListener("keyup", function () {
+
+                let value = this.value.toLowerCase();
+
+                document
+                    .querySelectorAll(".grade-item")
+                    .forEach(function (item) {
+
+                        item.style.display =
+                            item.innerText.toLowerCase()
+                                .includes(value)
+                                ? "block"
+                                : "none";
+
+                    });
+
+            });
+
+
+        /* CATEGORY FILTER */
+
+        document.querySelectorAll(".grade-sidebar li")
+            .forEach(btn => {
+
+                btn.onclick = function () {
+
+                    document
+                        .querySelectorAll(".grade-sidebar li")
+                        .forEach(li => li.classList.remove("active"));
+
+                    this.classList.add("active");
+
+                    let filter = this.dataset.filter;
+
+                    document
+                        .querySelectorAll(".grade-item")
+                        .forEach(item => {
+
+                            if (filter === "all")
+                                item.style.display = "block";
+                            else
+                                item.style.display =
+                                    item.classList.contains(filter)
+                                        ? "block" : "none";
+
+                        });
+
+                };
+
+            });
+
+    </script>
+    <!-- ================= INDUSTRIAL CTA SVG SECTION ================= -->
+
+    <section class="grade-cta-section">
+
+        <div class="container">
+
+            <div class="grade-cta-box">
+
+                <div class="cta-text">
+                    <h2>Can't Find Your Required Material Grade?</h2>
+                    <p>Our technical team helps you source certified industrial pipes, tubes and alloys worldwide.</p>
+                </div>
+
+                <a href="contact-us.html" class="cta-btn">
+                    Request Grade Information
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- SVG DESIGN -->
+        <svg class="industrial-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path fill="#111"
+                d="M0,64L80,69.3C160,75,320,85,480,85.3C640,85,800,75,960,69.3C1120,64,1280,64,1360,64L1440,64L1440,160L0,160Z">
+            </path>
+        </svg>
+
+    </section>
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- ================= UNIQUE INDUSTRIAL FOOTER END ================= -->
+    <script>
+        // Load Header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <script src="assets/js/YouTubePopUp.jquery.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+
+<!-- page-contact-us01:32-->
+
+</html>

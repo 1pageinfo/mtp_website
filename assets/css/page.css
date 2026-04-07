@@ -1,0 +1,213 @@
+/* ============================= */
+/* PRODUCT TABLE STYLE */
+/* ============================= */
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
+    background: #ffffff;
+}
+
+/* Header */
+table th {
+    background-color: #e53935;
+    color: #ffffff;
+    padding: 12px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    border: 1px solid #e53935;
+    white-space: nowrap;
+}
+
+/* Table Data */
+table td {
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #333333;
+    border: 1px solid #dddddd;
+    vertical-align: top;
+}
+
+/* Alternate Row Color */
+table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+table tr:hover td {
+    background-color: #fff1f1;
+}
+
+/* ============================= */
+/* MOBILE VIEW */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    table {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 8px;
+    }
+
+    /* Horizontal Scroll */
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+/* ============================= */
+/* SMALL MOBILE (OPTIONAL STACK) */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    table {
+        min-width: 600px;
+    }
+}
+/* ============================= */
+/* FAQ SECTION */
+/* ============================= */
+
+.faq-section {
+    max-width: 100%;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e53935;
+    border-left: 4px solid #e53935;
+    padding-left: 12px;
+}
+
+/* FAQ Item */
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-left: 4px solid #e53935;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 15px 18px;
+    transition: all 0.3s ease;
+}
+
+/* Question */
+.faq-item h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+}
+
+/* Answer */
+.faq-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+/* Hover Effect */
+.faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff5f5;
+}
+
+/* ============================= */
+/* MOBILE OPTIMIZATION */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .faq-section h3 {
+        font-size: 20px;
+    }
+
+    .faq-item {
+        padding: 14px 15px;
+    }
+
+    .faq-item h4 {
+        font-size: 15px;
+    }
+
+    .faq-item p {
+        font-size: 13px;
+    }
+}
+.contact-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    flex: 1;
+    min-width: 220px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-top: 4px solid #e53935;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.contact-box h4 {
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-box a {
+    color: #e53935;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-box:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+    }
+}
+.global-supply h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.global-supply p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.country-list {
+    margin-top: 15px;
+}

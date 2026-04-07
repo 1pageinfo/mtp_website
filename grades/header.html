@@ -1,0 +1,114 @@
+<header class="premium-header">
+
+    <!-- Subtle SVG Ring (Right Background Accent) -->
+    <svg class="header-ring" viewBox="0 0 600 600">
+        <circle cx="300" cy="300" r="250" stroke="#ff2d2d" stroke-width="50" fill="none" stroke-dasharray="1000"
+            stroke-dashoffset="350" />
+    </svg>
+
+    <div class="container">
+        <div class="header-inner">
+
+            <!-- Logo -->
+            <div class="logo-area">
+                <a href="../home.html">
+                    <img src="../assets/img/logo-dark.png" class="header-logo" alt="Metal Tubular Products">
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav-area" id="navArea">
+                <ul class="premium-menu">
+
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../about-us.html">About Us</a></li>
+
+                    <!-- Products -->
+                    <li class="has-dropdown">
+                        <a href="../search-your-grades.html">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="../pipes-and-tubes.html">Pipes and Tubes</a></li>
+                            <li><a href="../fittings-and-flanges.html">Fittings and Flanges</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Services -->
+                    <li class="has-dropdown">
+                        <a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="../h2-testing-service.html">H2 Testing Service</a></li>
+                            <li><a href="../hic-testing-service.html">HIC Testing Service</a></li>
+                            <li><a href="../blasting-and-painting-service.html">Blasting & Painting Service</a></li>
+                            <li><a href="../cutting-service.html">Cutting Service</a></li>
+                            <li><a href="../arc-welding-service.html">ARC Welding Service</a></li>
+                            <li><a href="../epoxy-cutting-service.html">Epoxy Cutting Service</a></li>
+                            <li><a href="../pmi-testing-service.html">PMI Testing Services</a></li>
+                            <li><a href="../hydro-testing-services.html">Hydro Testing Services</a></li>
+                            <li><a href="../nace-testing-services.html">NACE Testing Services</a></li>
+                            <li><a href="../ssc-testing-services.html">SSC Testing Services</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Resources -->
+                    <li class="has-dropdown">
+                        <a href="#">Resources <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="../quality-assurance.html">Quality Assurance</a></li>
+                            <li><a href="../technical-and-support.html">Technical & Support</a></li>
+                            <li><a href="../industries-we-serve.html">Industries We Serve</a></li>
+                            <li><a href="../assets/pdf/Metal-Tublar-Catalouge.pdf" target="_blank">Product Catalogue (PDF)</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contact-us.html">Contact Us</a></li>
+
+                </ul>
+            </nav>
+
+            <!-- CTA -->
+            <div class="cta-desktop">
+                <a href="../contact-us.html" class="header-btn">Get A Quote</a>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<script>
+    // Mobile Menu Toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+        var navArea = document.getElementById('navArea');
+        navArea.classList.toggle('active');
+    });
+
+    // Dropdown Toggle on Mobile
+    var dropdownButtons = document.querySelectorAll('.has-dropdown > a');
+    dropdownButtons.forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            var isMobile = window.innerWidth <= 991;
+            if (isMobile) {
+                e.preventDefault();
+                var parent = this.parentElement;
+                parent.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close menu when clicking on a link
+    var menuLinks = document.querySelectorAll('.premium-menu a:not(.has-dropdown > a)');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var navArea = document.getElementById('navArea');
+            navArea.classList.remove('active');
+        });
+    });
+</script>

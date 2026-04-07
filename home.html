@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<!-- home-100:13-->
+
+<head>
+    <title>Home - Metal Tubular Products</title>
+    <meta name="author" content="Nile-Theme">
+    <meta name="robots" content="index follow">
+    <meta name="googlebot" content="index follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="keywords"
+        content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, modern, shipment, transport, transportation, truck, trucking">
+    <meta name="description" content="Transportation and Logistics Responsive HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,500,600,700,400i,500%7CDancing+Script:700%7CDancing+Script:700%7CGreat+Vibes:400%7CPoppins:400%7CDosis:800%7CRaleway:400,700,800&amp;subset=latin-ext"
+        rel="stylesheet">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- owl Carousel assets -->
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- hover anmation -->
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <!-- flag icon -->
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- elegant icon -->
+    <link rel="stylesheet" href="assets/css/elegant_icon.css">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="assets/rslider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="assets/rslider/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/rslider/css/settings.css">
+
+    <style>
+        /* =========================
+CLEAN HOME HERO
+========================= */
+
+        .home-hero-clean {
+            padding: 120px 0 80px;
+            background: #f4f5f7;
+        }
+
+        .hero-clean-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        /* LEFT */
+        .hero-clean-left {
+            flex: 1;
+        }
+
+        .hero-clean-left h1 {
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #111;
+            margin-bottom: 25px;
+        }
+
+        .hero-clean-left span {
+            color: #e53935;
+        }
+
+        .hero-clean-left p {
+            color: #555;
+            max-width: 520px;
+            margin-bottom: 35px;
+            font-size: 17px;
+        }
+
+        .hero-btn {
+            background: #e53935;
+            color: #fff;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* RIGHT */
+        .hero-clean-right {
+            flex: 1;
+        }
+
+        .hero-clean-right video {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:992px) {
+
+            .hero-clean-wrap {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-clean-left h1 {
+                font-size: 42px;
+            }
+
+        }
+
+        /* product system overview
+ */
+        /* =========================
+HOME PRODUCTS SECTION
+========================= */
+
+        .home-products {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #666;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #f7f7f7;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #e53935;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:992px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:600px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* global supply process overview */
+
+        /* =========================
+HOME PROCESS SECTION
+========================= */
+
+        .home-process {
+            padding: 110px 0;
+            background: #f4f5f7;
+        }
+
+        .process-line {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 70px;
+            position: relative;
+        }
+
+        /* horizontal line */
+        .process-line::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 5%;
+            width: 90%;
+            height: 2px;
+            background: #ddd;
+            z-index: 0;
+        }
+
+        .process-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            background: #e53935;
+            color: #fff;
+            font-weight: 700;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+        }
+
+        .process-step h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .process-step p {
+            color: #666;
+            font-size: 14px;
+            max-width: 220px;
+            margin: auto;
+        }
+
+        /* subtle hover */
+        .process-step:hover .step-icon {
+            background: #111;
+            transition: 0.3s;
+        }
+
+        /* responsive */
+        @media(max-width:992px) {
+
+            .process-line {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .process-line::before {
+                display: none;
+            }
+
+            .process-step {
+                margin-bottom: 50px;
+            }
+
+        }
+
+        /* =========================
+HOME CERTIFICATIONS
+========================= */
+
+        .home-certifications {
+            padding: 110px 0;
+            background: #ffffff;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .cert-card {
+            background: #f7f7f7;
+            padding: 40px 20px;
+            text-align: center;
+            border: 1px solid #eee;
+            transition: 0.3s ease;
+        }
+
+        .cert-card img {
+            height: 60px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+
+        .cert-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .cert-card:hover {
+            border-color: #e53935;
+            transform: translateY(-6px);
+        }
+
+        /* responsive */
+
+        @media(max-width:992px) {
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:600px) {
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* =========================
+HOME INDUSTRIES
+========================= */
+
+        .home-industries {
+            padding: 110px 0;
+            background: #f4f5f7;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .industry-card {
+            background: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            border: 1px solid #eee;
+            transition: 0.3s ease;
+        }
+
+        .industry-icon {
+            margin-bottom: 15px;
+            color: #e53935;
+            /* default */
+            transition: 0.3s ease;
+        }
+
+        .industry-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .industry-card:hover {
+            border-color: #e53935;
+            transform: translateY(-6px);
+        }
+
+        /* responsive */
+
+        @media(max-width:992px) {
+            .industry-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:600px) {
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* =========================
+HOME GLOBAL SECTION
+========================= */
+
+        .home-global {
+            padding: 120px 0;
+            background: #111;
+            color: #fff;
+        }
+
+        .section-header.light h2 {
+            color: #fff;
+        }
+
+        .section-header.light p {
+            color: #bbb;
+        }
+
+        .global-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            margin-top: 70px;
+        }
+
+        /* LEFT STATS */
+        .global-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            flex: 1;
+        }
+
+        .stat-box {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .stat-box h3 {
+            font-size: 42px;
+            color: #e53935;
+            margin-bottom: 10px;
+        }
+
+        .stat-box p {
+            color: #ccc;
+            font-size: 15px;
+        }
+
+        .stat-box:hover {
+            border-color: #e53935;
+        }
+
+        /* RIGHT MAP */
+        .global-map {
+            flex: 1;
+            text-align: center;
+        }
+
+        .global-map img {
+            max-width: 100%;
+            opacity: 0.7;
+        }
+
+        /* responsive */
+
+        @media(max-width:992px) {
+
+            .global-content {
+                flex-direction: column;
+            }
+
+            .global-stats {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        /* =========================
+HOME CTA SECTION
+========================= */
+
+        .home-cta {
+            padding: 120px 0;
+            background: #f4f5f7;
+        }
+
+        .cta-box {
+            background: #ffffff;
+            padding: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            border: 1px solid #eee;
+        }
+
+        .cta-content {
+            flex: 1;
+        }
+
+        .cta-content h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .cta-content p {
+            color: #666;
+            max-width: 600px;
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-primary {
+            background: #e53935;
+            color: #fff;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cta-secondary {
+            border: 2px solid #111;
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cta-primary:hover {
+            background: #111;
+        }
+
+        .cta-secondary:hover {
+            border-color: #e53935;
+            color: #e53935;
+        }
+
+        /* responsive */
+
+        @media(max-width:992px) {
+
+            .cta-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-actions {
+                justify-content: center;
+            }
+
+            .cta-content h2 {
+                font-size: 30px;
+            }
+
+        }
+
+        /* =========================
+HOME WHY SECTION
+========================= */
+
+        .home-why {
+            padding: 120px 0;
+            background: #ffffff;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            margin-top: 70px;
+        }
+
+        .why-item {
+            padding: 40px;
+            border-left: 4px solid #e53935;
+            background: #f7f7f7;
+            transition: 0.3s ease;
+        }
+
+        .why-item h3 {
+            font-size: 48px;
+            color: #e53935;
+            margin-bottom: 15px;
+        }
+
+        .why-item h4 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .why-item p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .why-item:hover {
+            transform: translateY(-6px);
+            background: #f1f1f1;
+        }
+
+        /* responsive */
+
+        @media(max-width:992px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* ==============================
+TRUCK FULL WIDTH SECTION
+============================== */
+
+        .truck-banner {
+            width: 100%;
+            height: 800px;
+            background: url("assets/img/truck-banner.png") center center no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Optional soft fade into footer */
+        .truck-banner::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
+        }
+
+
+        .cert-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f7fa;
+            border-radius: 12px;
+        }
+
+        .cert-card {
+            text-align: center;
+            padding: 25px;
+            border-radius: 14px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ================================
+INDUSTRIAL HERO ADVANCED
+================================ */
+
+  .ind-hero {
+    height: 95vh;
+    position: relative;
+    overflow: hidden;
+
+    background:
+    radial-gradient(circle at 50% 30%, rgba(255, 0, 0, 0.547), transparent 60%),
+    linear-gradient(180deg,#050505 0%,#0b0b0b 40%,#0a0a0a 70%,#050505 100%);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+
+        /* PARALLAX WAREHOUSE */
+
+        .warehouse-parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background: url("assets/img/warehouse-dark.png") center/cover no-repeat;
+
+            opacity: .15;
+
+            animation: parallaxMove 20s linear infinite alternate;
+        }
+
+        @keyframes parallaxMove {
+            from {
+                transform: translateY(-20px)
+            }
+
+            to {
+                transform: translateY(20px)
+            }
+        }
+
+
+        @keyframes flow {
+            to {
+                stroke-dashoffset: -20
+            }
+        }
+
+
+        /* LIGHT BEAMS */
+
+        .beam {
+            position: absolute;
+            top: 0;
+            width: 200px;
+            height: 500px;
+
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, .08),
+                    transparent);
+
+            filter: blur(30px);
+
+            animation: beamMove 6s ease-in-out infinite alternate;
+        }
+
+        .beam1 {
+            left: 20%
+        }
+
+        .beam2 {
+            left: 50%
+        }
+
+        .beam3 {
+            left: 80%
+        }
+
+        @keyframes beamMove {
+            from {
+                opacity: .2
+            }
+
+            to {
+                opacity: .5
+            }
+        }
+
+
+        /* HERO TEXT */
+
+        .hero-center {
+            position: absolute;
+            z-index: 10;
+            text-align: center;
+            max-width: 700px;
+        }
+
+        .hero-center h1 {
+            font-size: 56px;
+            line-height: 1.15;
+            margin-bottom: 18px;
+            color: #f7f7f7;
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.25), 0 0 28px rgba(255, 42, 42, 0.28);
+        }
+
+        .typing-heading {
+            min-height: 2.2em;
+            letter-spacing: 0.4px;
+            transform: translateY(0);
+            animation: titleLift 1s ease-out;
+            margin-bottom: 16px;
+        }
+
+        @keyframes titleLift {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .typed-line {
+            display: block;
+            min-height: 1.1em;
+        }
+
+        .hero-center p {
+            color: #aaa;
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .hero-center p.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-btn {
+            background: linear-gradient(135deg, #ff1a1a, #b30000);
+            padding: 14px 30px;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            box-shadow: 0 8px 24px rgba(179, 0, 0, 0.45);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(18px) scale(0.98);
+            transition: opacity 0.7s ease, transform 0.7s ease, box-shadow 0.35s ease;
+            display: inline-block;
+        }
+
+        .hero-btn::after {
+            content: "";
+            position: absolute;
+            top: -120%;
+            left: -60%;
+            width: 40%;
+            height: 320%;
+            transform: rotate(25deg);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0));
+            transition: left 0.6s ease;
+            pointer-events: none;
+        }
+
+        .hero-btn:hover {
+            box-shadow: 0 10px 30px rgba(255, 26, 26, 0.55);
+            transform: translateY(-2px);
+        }
+
+        .hero-btn:hover::after {
+            left: 120%;
+        }
+
+        .hero-btn.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            animation: btnPulse 2.6s ease-in-out infinite;
+        }
+
+        @keyframes btnPulse {
+            0%,
+            100% {
+                box-shadow: 0 8px 24px rgba(179, 0, 0, 0.45);
+            }
+
+            50% {
+                box-shadow: 0 12px 34px rgba(255, 26, 26, 0.62);
+            }
+        }
+
+
+        /* VIDEO BACKGROUND */
+
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-video-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  Header  -->
+    <div id="header"></div>
+    <!-- // Header  -->
+    <section class="ind-hero">
+
+        <!-- PARALLAX WAREHOUSE BACKGROUND -->
+        <div class="warehouse-parallax"></div>
+
+        <!-- LIGHT BEAMS -->
+        <div class="beam beam1"></div>
+        <div class="beam beam2"></div>
+        <div class="beam beam3"></div>
+
+
+        <!-- HERO TEXT -->
+        <div class="hero-center">
+
+            <h1 class="typing-heading" aria-label="Industrial Piping and Alloy Supply Network">
+                <span id="typed-line-1" class="typed-line"></span>
+                <span id="typed-line-2" class="typed-line"></span>
+            </h1>
+            <p id="hero-subtitle">
+                Live inventory. Certified alloys. Fast dispatch operations with real-time logistics support.
+            </p>
+
+            <a id="hero-cta" href="search-your-grades.html" class="hero-btn">Explore Products</a>
+
+        </div>
+
+        <!-- VIDEO BACKGROUND -->
+        <div class="hero-video-bg">
+            <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline>
+                <source src="assets/video/hero_section.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <section class="home-products">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Complete Industrial Product Portfolio</h2>
+                <p>Engineered materials built for pressure, temperature & critical operations.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="assets/img/home_product/seamless-pipe.jpeg" alt="Pipes">
+                    <h3>Pipes</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/home_product/buttweld.jpeg" alt="Buttweld Fittings">
+                    <h3>Buttweld Fittings</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/home_product/stainless-steel-flange.jpg" alt="Flanges">
+                    <h3>Flanges</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/home_product/socket-weld.jpeg" alt="Socket Weld">
+                    <h3>Socket Weld</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/home_product/sheet-coil.jpg" alt="Sheets & Coils">
+                    <h3>Sheets & Coils</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/img/home_product/bar.jpeg" alt="Bars">
+                    <h3>Bars</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-process">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Global Supply & Quality Control System</h2>
+                <p>From mill procurement to international dispatch with full compliance & traceability.</p>
+            </div>
+
+            <div class="process-line">
+
+                <div class="process-step">
+                    <div class="step-icon">01</div>
+                    <h3>Approved Mills</h3>
+                    <p>Strategic sourcing from certified global manufacturers.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">02</div>
+                    <h3>Third Party Inspection</h3>
+                    <p>Material verification with MTC 3.1 & compliance reports.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">03</div>
+                    <h3>Warehouse & Stocking</h3>
+                    <p>Organized inventory system with ready dispatch capability.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">04</div>
+                    <h3>Global Dispatch</h3>
+                    <p>Export packaging & international logistics management.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="home-certifications">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Certified Quality & International Compliance</h2>
+                <p>Our products meet globally recognized standards ensuring reliability, traceability and performance.
+                </p>
+            </div>
+
+            <div class="cert-grid">
+
+                <div class="cert-card">
+                    <!-- ISO 9001 -->
+                    <div class="cert-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h4>ISO 9001:2015</h4>
+                </div>
+
+                <div class="cert-card">
+                    <!-- ISO 14001 -->
+                    <div class="cert-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2">
+                            <path d="M12 2C8 6 6 9 6 13a6 6 0 0012 0c0-4-2-7-6-11z" />
+                        </svg>
+                    </div>
+                    <h4>ISO 14001:2015</h4>
+                </div>
+
+                <div class="cert-card">
+                    <!-- PED -->
+                    <div class="cert-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2">
+                            <rect x="3" y="6" width="18" height="12" rx="2" />
+                            <path d="M7 12h10" />
+                        </svg>
+                    </div>
+                    <h4>PED Approved</h4>
+                </div>
+
+                <div class="cert-card">
+                    <!-- CE -->
+                    <div class="cert-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2">
+                            <path d="M16 8a4 4 0 100 8" />
+                            <path d="M12 8a4 4 0 100 8" />
+                        </svg>
+                    </div>
+                    <h4>CE Marking</h4>
+                </div>
+
+                <div class="cert-card">
+                    <!-- Third Party Inspection -->
+                    <div class="cert-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h4>Third Party Inspection</h4>
+                </div>
+
+                <div class="cert-card">
+                    <!-- MTC -->
+                    <div class="cert-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1f2937" stroke-width="2">
+                            <rect x="4" y="3" width="16" height="18" rx="2" />
+                            <path d="M8 7h8M8 11h8M8 15h5" />
+                        </svg>
+                    </div>
+                    <h4>MTC 3.1 Certification</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-industries">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Supplying critical materials for demanding industrial applications worldwide.</p>
+            </div>
+
+            <div class="industry-grid">
+
+                <!-- Oil & Gas -->
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C12 2 6 9 6 13a6 6 0 0 0 12 0c0-4-6-11-6-11z" />
+                        </svg>
+                    </div>
+                    <h4>Oil & Gas</h4>
+                </div>
+
+                <!-- Power Plants -->
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 11 14 9 22 21 8 13 8 13 2" />
+                        </svg>
+                    </div>
+                    <h4>Power Plants</h4>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="10" width="4" height="11" />
+                            <rect x="10" y="6" width="4" height="15" />
+                            <rect x="17" y="2" width="4" height="19" />
+                        </svg>
+                    </div>
+                    <h4>Infrastructure</h4>
+                </div>
+
+                <!-- Petrochemical -->
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 2v6l-4 7a4 4 0 0 0 3.5 6h5a4 4 0 0 0 3.5-6l-4-7V2" />
+                        </svg>
+                    </div>
+                    <h4>Petrochemical</h4>
+                </div>
+
+                <!-- Marine -->
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 18c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2" />
+                            <path d="M5 16l7-10 7 10" />
+                        </svg>
+                    </div>
+                    <h4>Marine</h4>
+                </div>
+
+                <!-- Engineering Projects -->
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M19.4 15a7.97 7.97 0 0 0 .1-6l2-1-2-3-2 1a8 8 0 0 0-5-2l-1-2H9l-1 2a8 8 0 0 0-5 2L1 5l-2 3 2 1a8 8 0 0 0 0 6l-2 1 2 3 2-1a8 8 0 0 0 5 2l1 2h2l1-2a8 8 0 0 0 5-2l2 1 2-3-2-1z" />
+                        </svg>
+                    </div>
+                    <h4>Engineering Projects</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-global">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Global Supply Network</h2>
+                <p>Delivering certified industrial materials across international markets.</p>
+            </div>
+
+            <div class="global-content">
+
+                <!-- LEFT STATS -->
+                <div class="global-stats">
+
+                    <div class="stat-box">
+                        <h3>45+</h3>
+                        <p>Countries Supplied</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>1200+</h3>
+                        <p>Material Grades</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>20+</h3>
+                        <p>Years Experience</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>500+</h3>
+                        <p>Active Industrial Clients</p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT MAP -->
+                <div class="global-map">
+                    <img src="assets/img/gmap.png" alt="Global Presence">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <div class="cta-content">
+                    <h2>Engineered Materials For Critical Industrial Projects</h2>
+                    <p>
+                        Partner with a globally trusted metal stockist delivering
+                        certified piping, fittings & flanges with fast dispatch support.
+                    </p>
+                </div>
+
+                <div class="cta-actions">
+                    <a href="contact-us.html" class="cta-primary">Request Quotation</a>
+                    <a href="assets/pdf/Metal-Tublar-Catalouge.pdf" class="cta-secondary">Download Catalogue</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-why">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Why Metal Tubular Products?</h2>
+                <p>Strategic sourcing, technical compliance & dependable global supply execution.</p>
+            </div>
+
+            <div class="why-grid">
+
+                <div class="why-item">
+                    <h3>01</h3>
+                    <h4>Extensive Inventory</h4>
+                    <p>Wide stock availability across carbon steel, stainless, duplex and alloy materials.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>02</h3>
+                    <h4>Technical Compliance</h4>
+                    <p>Full documentation including MTC 3.1, third-party inspection and global standards.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>03</h3>
+                    <h4>Fast Dispatch</h4>
+                    <p>Structured warehousing & packaging system ensuring quick domestic & export delivery.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>04</h3>
+                    <h4>Global Export Expertise</h4>
+                    <p>Experience supplying EPC contractors, refineries & industrial projects worldwide.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TRUCK DELIVERY BANNER ================= -->
+    <section class="truck-banner">
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- ================= UNIQUE INDUSTRIAL FOOTER END ================= -->
+    <script>
+        // Load Header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+
+        // Type hero heading in two lines for a terminal-like reveal effect.
+        (function runHeroTyping() {
+            const lineOneTarget = document.getElementById("typed-line-1");
+            const lineTwoTarget = document.getElementById("typed-line-2");
+            const subtitleTarget = document.getElementById("hero-subtitle");
+            const buttonTarget = document.getElementById("hero-cta");
+
+            if (!lineOneTarget || !lineTwoTarget) {
+                return;
+            }
+
+            const lineOne = "Industrial Piping & Alloy";
+            const lineTwo = "Supply Network";
+            const typeDelay = 65;
+            const linePause = 220;
+
+            function typeLine(target, text, done) {
+                let index = 0;
+
+                function typeNext() {
+                    target.textContent = text.slice(0, index + 1);
+                    index += 1;
+
+                    if (index < text.length) {
+                        setTimeout(typeNext, typeDelay);
+                    } else if (typeof done === "function") {
+                        setTimeout(done, linePause);
+                    }
+                }
+
+                if (text.length > 0) {
+                    typeNext();
+                }
+            }
+
+            typeLine(lineOneTarget, lineOne, function () {
+                typeLine(lineTwoTarget, lineTwo, function () {
+                    if (subtitleTarget) {
+                        subtitleTarget.classList.add("is-visible");
+                    }
+
+                    setTimeout(function () {
+                        if (buttonTarget) {
+                            buttonTarget.classList.add("is-visible");
+                        }
+                    }, 230);
+                });
+            });
+        })();
+    </script>
+
+    <!-- jquery library  -->
+    <script src="assets/js/nile-slider.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="assets/rslider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/rslider/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+    <script src="assets/rslider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/rslider/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="assets/js/YouTubePopUp.jquery.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+
+<!-- home-100:30-->
+
+</html>
