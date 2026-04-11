@@ -31,12 +31,24 @@ Primary use:    Transportation and Logistics
 -------------------------------------------------------------------*/
 
 /* ================= INDUSTRIAL NAMEPLATE FOOTER ================= */
+html,
+body {
+  overflow-x: hidden;
+}
+
 .svg-footer {
   position: relative;
+  width: 100%;
+  max-width: 100%;
   background: radial-gradient(circle at center, #0a0a0a 0%, #000 80%);
   padding: 140px 0 60px;
   overflow: hidden;
   color: #fff;
+}
+
+#footer {
+  width: 100%;
+  overflow: hidden;
 }
 
 /* SVG Position */
