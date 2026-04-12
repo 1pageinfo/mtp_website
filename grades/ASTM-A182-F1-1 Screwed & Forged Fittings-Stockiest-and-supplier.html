@@ -217,6 +217,8 @@
 ]
     </script>
     <!-- SEO_SCHEMA_END -->
+
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 
 <body>
@@ -245,29 +247,28 @@
 					<div class="col-lg-7">
 						<div class="padding-30px">
 							<h3 class="padding-bottom-15px">Get A Free Quote</h3>
-							<form>
+							<form id="quote-form">
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label>Full Name</label>
-										<input type="text" class="form-control" id="inputName4" placeholder="Name">
+										<input type="text" class="form-control" id="inputName4" name="name" placeholder="Name">
 									</div>
 									<div class="form-group col-md-6">
 										<label>Email</label>
-										<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+										<input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
 									</div>
 								</div>
 								<div class="form-group">
 									<label>Address</label>
-									<input type="text" class="form-control" id="inputAddress"
+									<input type="text" class="form-control" id="inputAddress" name="address"
 										placeholder="1234 Main St">
 								</div>
 								<div class="form-group">
 									<label>Message</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									<textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
 								</div>
-								<a href="#"
-									class="btn-sm btn-lg btn-block background-dark text-white text-center  text-uppercase rounded-0 padding-15px">SEND
-									MESSAGE</a>
+								<button type="submit" class="btn-sm btn-lg btn-block background-dark text-white text-center text-uppercase rounded-0 padding-15px">SEND MESSAGE</button>
+<div id="quote-form-msg" style="display:none;margin-top:10px;"></div>
 							</form>
 						</div>
 					</div>
@@ -929,6 +930,7 @@
 	<script src="../assets/js/popper.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
 
+<script src="../assets/js/enquiry.js"></script>
 </body>
 
 

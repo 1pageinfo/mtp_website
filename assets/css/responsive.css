@@ -1,0 +1,513 @@
+/* ================================================================
+   METAL TUBULAR PRODUCTS — GLOBAL RESPONSIVE STYLESHEET
+   Covers: all pages, all breakpoints (1200 → 360px)
+   One file, loaded on every page. Overrides inline + page styles.
+================================================================ */
+
+/* ---------------------------------------------------------------
+   1. GLOBAL FOUNDATION
+----------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img, video, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keep map iframes at auto height but still constrained */
+.contact-map iframe {
+  height: 350px;
+  width: 100%;
+}
+
+/* Modal stays inside viewport */
+.modal-dialog {
+  margin: 10px auto;
+  max-width: calc(100% - 20px);
+}
+
+/* search overlay full-width input */
+#search form {
+  width: 90%;
+}
+
+/* ---------------------------------------------------------------
+   2. TYPOGRAPHY — fluid scale
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.65rem !important; }
+}
+@media (max-width: 576px) {
+  h1 { font-size: 1.75rem !important; }
+  h2 { font-size: 1.4rem !important; }
+  h3 { font-size: 1.15rem !important; }
+  p  { font-size: 15px; }
+}
+
+/* ---------------------------------------------------------------
+   3. SECTION PADDING — all inner-page sections
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .padding-tb-120px { padding-top: 70px !important; padding-bottom: 70px !important; }
+  .padding-tb-100px { padding-top: 60px !important; padding-bottom: 60px !important; }
+  .padding-tb-80px  { padding-top: 50px !important; padding-bottom: 50px !important; }
+}
+@media (max-width: 576px) {
+  .padding-tb-120px { padding-top: 50px !important; padding-bottom: 50px !important; }
+  .padding-tb-100px { padding-top: 40px !important; padding-bottom: 40px !important; }
+  .padding-tb-80px  { padding-top: 35px !important; padding-bottom: 35px !important; }
+}
+
+/* ---------------------------------------------------------------
+   4. HOMEPAGE — ind-hero (full-screen dark hero with video)
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .ind-hero {
+    height: auto;
+    min-height: 70vh;
+    padding: 80px 0;
+  }
+  .hero-center {
+    position: relative;
+    max-width: 92%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .hero-center h1 {
+    font-size: 2rem !important;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+  .hero-center p {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 576px) {
+  .ind-hero {
+    min-height: 60vh;
+    padding: 60px 0;
+  }
+  .hero-center h1 {
+    font-size: 1.6rem !important;
+  }
+  .beam { display: none; }  /* remove decorative beams on small screens */
+}
+
+/* ---------------------------------------------------------------
+   5. PAGE TITLE BANNER (Nile-theme service/grade pages)
+----------------------------------------------------------------*/
+.page-title {
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .page-title .padding-tb-120px {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+  }
+  .page-title h1 {
+    font-size: 1.9rem !important;
+  }
+  .breadcrumb {
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .page-title .padding-tb-120px {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .page-title h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+   6. SERVICE PAGES — content (col-lg-9) + sidebar (col-lg-3)
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  /* Sidebar drops below content on tablet and mobile */
+  .col-lg-9,
+  .col-lg-3 {
+    width: 100% !important;
+  }
+  /* service image slider */
+  .service-slider-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  /* nile sidebar widget */
+  .nile-widget {
+    margin-top: 30px;
+  }
+}
+
+/* ---------------------------------------------------------------
+   7. CONTACT ROW (3 boxes inside service pages)
+----------------------------------------------------------------*/
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 30px 0;
+}
+.contact-box {
+  flex: 1 1 200px;
+  background: #f7f7f7;
+  border-left: 4px solid #e53935;
+  padding: 20px;
+}
+.contact-box h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+.contact-box a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+.contact-box a:hover { color: #e53935; }
+@media (max-width: 576px) {
+  .contact-row { flex-direction: column; }
+  .contact-box { flex: 1 1 100%; }
+}
+
+/* ---------------------------------------------------------------
+   8. APPLICATION SECTION (service pages)
+----------------------------------------------------------------*/
+.application-section {
+  margin: 30px 0;
+}
+.application-list {
+  padding-left: 20px;
+}
+.application-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------------
+   9. GLOBAL SUPPLY SECTION (service/product pages)
+----------------------------------------------------------------*/
+.global-supply {
+  padding: 50px 0;
+}
+@media (max-width: 576px) {
+  .global-supply {
+    padding: 35px 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+  10. CONTACT PAGE (contact-us.html)
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .contact-hero {
+    padding: 90px 0 60px;
+  }
+  .contact-hero h1 {
+    font-size: 1.9rem !important;
+  }
+  .contact-card {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-box {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-hero {
+    padding: 60px 0 40px;
+  }
+  .contact-hero h1 {
+    font-size: 1.5rem !important;
+  }
+  .contact-card { padding: 20px 15px; }
+  .contact-form-box { padding: 20px 15px; }
+  .contact-map iframe { height: 250px; }
+}
+
+/* ---------------------------------------------------------------
+  11. GRADE DIRECTORY (search-your-grades.html)
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .grade-sidebar {
+    position: static !important;
+    top: unset;
+    margin-bottom: 30px;
+  }
+  .grade-directory-area {
+    padding: 25px 15px;
+  }
+  .directory-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 576px) {
+  .grade-sidebar { padding: 20px 15px; }
+  .grade-sidebar li { padding: 10px 14px; font-size: 14px; }
+}
+
+/* ---------------------------------------------------------------
+  12. ABOUT US PAGE
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .about-intro h2 { font-size: 1.7rem !important; }
+  .industrial-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .about-hero-split {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 576px) {
+  .about-intro h2 { font-size: 1.4rem !important; }
+  .industrial-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .vm-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+  13. INDUSTRIES PAGE & SECTION
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 576px) {
+  .industries-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+  14. PIPES & TUBES / FITTINGS & FLANGES PAGES
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .pipe-hero,
+  .ff-hero {
+    padding: 60px 0 !important;
+    text-align: center;
+  }
+  .pipe-subtitle,
+  .ff-sub {
+    margin: 0 auto 20px !important;
+  }
+  .cap-boxes .row > [class*="col-"] {
+    margin-bottom: 20px;
+  }
+  /* industry boxes within product pages */
+  .industries-section .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .pipe-hero h1,
+  .ff-hero h1 {
+    font-size: 1.6rem !important;
+  }
+  .industries-section .industries-grid {
+    grid-template-columns: 1fr;
+  }
+  .pipe-tags span,
+  .ff-tags span {
+    display: inline-block;
+    margin: 4px;
+    font-size: 12px;
+  }
+}
+
+/* Cap boxes row (pipes & tubes capabilities) */
+@media (max-width: 768px) {
+  .cap-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------------------------------------------------------------
+  15. TRUCK BANNER (homepage / product pages)
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .truck-banner {
+    height: 420px !important;
+  }
+}
+@media (max-width: 576px) {
+  .truck-banner {
+    height: 250px !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+  16. QUALITY ASSURANCE PAGE (Bootstrap col grid — auto-responsive)
+      Extra tweaks for inner sections
+----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .qa-card { padding: 25px 18px; }
+  .qa-icon { width: 60px; height: 60px; }
+  .qa-icon i { font-size: 24px; }
+}
+
+/* ---------------------------------------------------------------
+  17. TECHNICAL & SUPPORT PAGE
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .tech-section .row {
+    flex-direction: column;
+  }
+  .tech-section img {
+    height: 250px !important;
+    width: 100% !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+  18. GRADE PAGES (grades/ folder content sections)
+----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  /* Grade content header */
+  .grade-header-band {
+    padding: 40px 0 !important;
+    text-align: center;
+  }
+  .grade-header-band h1 {
+    font-size: 1.6rem !important;
+  }
+  /* Product image inside grade page */
+  .grade-product-img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------------------------------------------------------------
+  19. SEARCH / NAV OVERLAY
+----------------------------------------------------------------*/
+@media (max-width: 576px) {
+  #search form {
+    width: 95%;
+    padding: 0 10px;
+  }
+  #search input[type="search"] {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+
+/* ---------------------------------------------------------------
+  20. FOOTER — final guard for right-side gap + ring sizing
+----------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .footer-rings {
+    right: -350px;
+    top: -250px;
+    width: 700px;
+    height: 700px;
+  }
+  .footer-content {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer-rings {
+    display: none; /* hide decorative ring on small screens */
+  }
+  .svg-footer {
+    padding: 50px 0 30px !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+  21. BOOTSTRAP ROW GUTTER FIX (prevents horizontal overflow)
+----------------------------------------------------------------*/
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row > [class*="col-"] {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ---------------------------------------------------------------
+  22. INLINE FLEXBOX SECTIONS — universal guard
+     Any flex section not yet covered stacks on mobile
+----------------------------------------------------------------*/
+@media (max-width: 576px) {
+  .d-flex:not(.footer-social):not(.premium-menu):not(.mobile-toggle):not(.header-inner) {
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------------------------------------------------------------
+  23. GET-A-QUOTE MODAL FIX on mobile
+----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .contact-modal .col-lg-5 {
+    display: none;          /* hide image column to save space */
+  }
+  .contact-modal .col-lg-7 {
+    width: 100% !important;
+  }
+  .contact-modal .padding-30px {
+    padding: 20px 15px !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+  24. MISC UTILITY — ensure tables don't blow layout
+----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ---------------------------------------------------------------
+  25. SECTION TITLES — consistent padding on small screens
+----------------------------------------------------------------*/
+@media (max-width: 576px) {
+  .section-title {
+    margin-bottom: 35px !important;
+    padding: 0 8px;
+  }
+  .section-title h5 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  .section-header {
+    margin-bottom: 35px;
+  }
+  .section-header h2 {
+    font-size: 1.5rem !important;
+  }
+}
