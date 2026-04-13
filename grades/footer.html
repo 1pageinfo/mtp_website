@@ -1,4 +1,4 @@
-﻿<footer class="svg-footer">
+<footer class="svg-footer">
 
     <!-- SVG RING STRUCTURE -->
     <svg class="footer-rings" viewBox="0 0 800 800">
@@ -45,16 +45,29 @@
         </div>
 
         <div class="footer-right">
-            <h4><b>Connect us</b></h4>
-            <div>Mumbai, India</div>
-            <div>+91 9769231134</div>
-            <div>sales@metaltubular.com</div>
+            <h4><b>Connect Hub</b></h4>
+            <div class="footer-connect-grid">
+                <div class="footer-contact-card">
+                    <div class="footer-office-title">Head Office</div>
+                    <div class="footer-office-address">
+                        05, 1st floor, 32 No Building Vaikunth house, 2nd carpenter street,<br>
+                        Mumbai - 400004, Maharashtra, India.
+                    </div>
+                    <div class="footer-contact-line"><i class="fa fa-phone"></i> +91 9769231134</div>
+                    <div class="footer-contact-line"><i class="fa fa-envelope"></i> sales@metaltubular.com</div>
+                </div>
+
+                <a class="footer-qr-card" href="https://wa.me/919769231134?text=Hello%20Metal%20Tubular%20Products%2C%20I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" aria-label="Scan QR and connect on WhatsApp">
+                    <img src="../assets/img/WhatsApp_QR.png" alt="Scan WhatsApp QR to connect">
+                    <div class="footer-qr-text">Scan and connect on WhatsApp</div>
+                </a>
+            </div>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        Â© 2026 Metal Tubular Products
+        © 2026 Metal Tubular Products
     </div>
 
 </footer>
@@ -89,7 +102,86 @@
         transform: translateY(-2px);
     }
 
+    .footer-contact-card {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.04));
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 14px;
+        padding: 14px;
+        color: #f2f2f2;
+        line-height: 1.55;
+        backdrop-filter: blur(2px);
+    }
+
+    .footer-office-title {
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #ffffff;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .footer-office-address {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .footer-contact-line {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .footer-contact-line i {
+        margin-right: 6px;
+        color: #25d366;
+    }
+
+    .footer-connect-grid {
+        display: grid;
+        grid-template-columns: minmax(220px, 1fr) 140px;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .footer-qr-card {
+        background: #ffffff;
+        border-radius: 14px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+        transition: transform 0.2s ease;
+    }
+
+    .footer-qr-card:hover {
+        transform: translateY(-2px);
+    }
+
+    .footer-qr-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .footer-qr-text {
+        color: #111111;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 8px;
+        line-height: 1.4;
+    }
+
     @media (max-width: 767px) {
+        .footer-connect-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-qr-card {
+            max-width: 170px;
+        }
+
         .whatsapp-float-cta {
             width: 58px;
             height: 58px;
