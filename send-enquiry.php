@@ -2,7 +2,7 @@
 /**
  * Enquiry form mailer — Metal Tubular Products
  * Handles POST from: contact-us.html main form + modal "Get A Quote" on all pages
- * Sends to: info@metaltubular.com
+ * Sends to: sales@metaltubular.com
  */
 
 header('Content-Type: application/json; charset=utf-8');
@@ -43,7 +43,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Compose email
-$to      = 'info@metaltubular.com';
+$to      = 'sales@metaltubular.com';
 $subject = 'New Enquiry from ' . $name . ' — Metal Tubular Products';
 
 $body  = "New enquiry received from the website.\n";
@@ -74,6 +74,6 @@ if ($sent) {
     http_response_code(500);
     echo json_encode([
         'success' => false,
-        'message' => 'Failed to send your message. Please try again or contact us at info@metaltubular.com.'
+        'message' => 'Failed to send your message. Please try again or contact us at sales@metaltubular.com.'
     ]);
 }
