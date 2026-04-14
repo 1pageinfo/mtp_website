@@ -151,3 +151,52 @@
 
 
 }(jQuery));
+
+// =============================================
+// Mobile Navigation — Event Delegation
+// Handles header injected via fetch + innerHTML
+// =============================================
+document.addEventListener('click', function (e) {
+
+    // 1. Hamburger toggle
+    var toggle = e.target.closest('#mobileToggle');
+    if (toggle) {
+        var nav = document.getElementById('navArea');
+        if (nav) {
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+        return;
+    }
+
+    // 2. Dropdown on mobile
+    if (window.innerWidth <= 991) {
+        var dropLink = e.target.closest('.has-dropdown > a');
+        if (dropLink) {
+            e.preventDefault();
+            dropLink.parentElement.classList.toggle('active');
+            return;
+        }
+    }
+
+    // 3. Close nav when clicking outside header
+    var navArea = document.getElementById('navArea');
+    if (navArea && navArea.classList.contains('active')) {
+        if (!e.target.closest('.premium-header') && !e.target.closest('.header-topbar')) {
+            navArea.classList.remove('active');
+            var mToggle = document.getElementById('mobileToggle');
+            if (mToggle) { mToggle.classList.remove('active'); }
+        }
+    }
+
+    // 4. Close nav when a leaf menu link is tapped on mobile
+    if (window.innerWidth <= 991) {
+        var leafLink = e.target.closest('.premium-menu a');
+        if (leafLink && !leafLink.closest('.has-dropdown')) {
+            var nv = document.getElementById('navArea');
+            var mt = document.getElementById('mobileToggle');
+            if (nv) { nv.classList.remove('active'); }
+            if (mt) { mt.classList.remove('active'); }
+        }
+    }
+});

@@ -1,3 +1,19 @@
+<!-- ===== TOP INFO BAR ===== -->
+<div class="header-topbar">
+    <div class="container">
+        <div class="topbar-inner">
+            <a href="tel:+919769231134" class="topbar-item">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+91 9769231134</span>
+            </a>
+            <a href="mailto:sales@metaltubulars.com" class="topbar-item">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>sales@metaltubulars.com</span>
+            </a>
+        </div>
+    </div>
+</div>
+
 <header class="premium-header">
 
     <!-- Subtle SVG Ring (Right Background Accent) -->
@@ -83,32 +99,3 @@
 
 </header>
 
-<script>
-    // Mobile Menu Toggle
-    document.getElementById('mobileToggle').addEventListener('click', function() {
-        var navArea = document.getElementById('navArea');
-        navArea.classList.toggle('active');
-    });
-
-    // Dropdown Toggle on Mobile
-    var dropdownButtons = document.querySelectorAll('.has-dropdown > a');
-    dropdownButtons.forEach(function(button) {
-        button.addEventListener('click', function(e) {
-            var isMobile = window.innerWidth <= 991;
-            if (isMobile) {
-                e.preventDefault();
-                var parent = this.parentElement;
-                parent.classList.toggle('active');
-            }
-        });
-    });
-
-    // Close menu when clicking on a link
-    var menuLinks = document.querySelectorAll('.premium-menu a:not(.has-dropdown > a)');
-    menuLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            var navArea = document.getElementById('navArea');
-            navArea.classList.remove('active');
-        });
-    });
-</script>
