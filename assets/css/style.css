@@ -271,9 +271,9 @@ body {
    TOP INFO BAR
 ================================= */
 .header-topbar {
-  background: #111;
+  background: #ffffff;
   padding: 7px 0;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .topbar-inner {
@@ -287,7 +287,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #ccc;
+  color: #111;
   text-decoration: none;
   font-size: 13px;
   transition: color 0.3s;
@@ -295,12 +295,12 @@ body {
 }
 
 .topbar-item i {
-  color: #ff2d2d;
+  color: #111;
   font-size: 12px;
 }
 
 .topbar-item:hover {
-  color: #fff;
+  color: #ff2d2d;
 }
 
 @media (max-width: 600px) {
