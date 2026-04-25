@@ -45,22 +45,18 @@
 </div>
 
         <div class="footer-right">
-            <h4><b>Connect Hub</b></h4>
+            <h4><b>Connect Hub:</b></h4>
             <div class="footer-connect-grid">
-                <div class="footer-contact-card">
-                    <div class="footer-office-title">Head Office</div>
-                    <div class="footer-office-address">
-                        05, 1st floor, 32 No Building Vaikunth house, 2nd carpenter street,<br>
-                        Mumbai - 400004, Maharashtra, India.
-                    </div>
-                    <div class="footer-contact-line"><i class="fa fa-phone"></i> <a href="tel:+919769231134">+91 9769231134</a></div>
-                    <div class="footer-contact-line"><i class="fa fa-envelope"></i> <a href="mailto:sales@metaltubulars.com">sales@metaltubulars.com</a></div>
-                </div>
-
-                <a class="footer-qr-card" href="https://wa.me/919769231134?text=Hello%20Metal%20Tubular%20Products%2C%20I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" aria-label="Scan QR and connect on WhatsApp">
-                    <img src="assets/img/WhatsApp_QR.png" alt="Scan WhatsApp QR to connect">
-                    <div class="footer-qr-text">Scan and connect on WhatsApp</div>
-                </a>
+                   <div class="footer-qr-row">
+                       <a class="footer-qr-card" href="img/Address_QR.png" target="_blank" rel="noopener noreferrer" aria-label="Scan Address QR for location">
+                           <img class="footer-qr-img" src="assets/img/Address_QR.png" alt="Scan Address QR for location">
+                           <div class="footer-qr-text">Head Office</div>
+                       </a>
+                       <a class="footer-qr-card" href="https://wa.me/919769231134?text=Hello%20Metal%20Tubular%20Products%2C%20I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" aria-label="Scan QR and connect on WhatsApp">
+                           <img class="footer-qr-img" src="assets/img/WhatsApp_QR.png" alt="Scan WhatsApp QR to connect">
+                           <div class="footer-qr-text">WhatsApp Us</div>
+                       </a>
+                   </div>
             </div>
         </div>
 
@@ -147,10 +143,9 @@
     }
 
     .footer-connect-grid {
-        display: grid;
-        grid-template-columns: minmax(220px, 1fr) 140px;
-        gap: 12px;
-        align-items: stretch;
+        display: block;
+        gap: 0;
+        align-items: flex-start;
     }
 
     .footer-qr-card {
@@ -168,11 +163,22 @@
         transform: translateY(-2px);
     }
 
-    .footer-qr-card img {
-        width: 100%;
-        height: auto;
+    .footer-qr-img {
+        width: 130px;
+        height: 130px;
+        max-width: 100%;
         display: block;
         border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    .footer-qr-row {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 0;
     }
 
     .footer-qr-text {
@@ -187,11 +193,19 @@
         .footer-connect-grid {
             grid-template-columns: 1fr;
         }
-
+        .footer-qr-row {
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+        }
         .footer-qr-card {
             max-width: 170px;
         }
-
+        .footer-qr-img {
+            width: 120px;
+            height: 120px;
+        }
         .whatsapp-float-cta {
             width: 58px;
             height: 58px;
